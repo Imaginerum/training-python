@@ -1,3 +1,3 @@
 # training
 
-I put here my code to have darabase of my training tasks
+I put here my code to have database of my training tasks and see what VCS can do.
