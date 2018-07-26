@@ -29,12 +29,6 @@ def owce() :
     #kombinacja slowa 4-warunkowa :
     był = [' była juz tylko jedna', ' były już tylko {0}'.format(B-Z), ' było już tylko {0}'.format(B-Z), ' nie było już']
 
-    def war2(slowo, ile):  # 2 opcje warunkowe
-        if len(slowo)<3 and ile == 1:
-            return(slowo[0])
-        else :
-            return(slowo[1])
-
 
     def war(slowo, ile) : # 3 opcje warunkowe
         if (len(str(ile)) == 1):
@@ -72,9 +66,10 @@ def owce() :
             else: # 3 i 4 opcje warunkowe!!!
                 return (slowo[2])
 
+
     if (B >=1) & (W >=1) & (Z>=0) & (B>=Z) : #kontrola danych
         print('Na łące' + war(pasł, B) + 'się {0}'.format(B) + war(owc, B) +
-        '. Wieczorem' + war(przyszł, W) + str(W) + war(wil, W) + 'i' + war2(zja, W) + str(Z) +
+        '. Wieczorem' + war(przyszł, W) + str(W) + war(wil, W) + 'i' + war(zja, W) + str(Z) +
         war(owc, Z) + '. Rano na łace' + war(był, B-Z) + war(owc, B-Z))
 
     else :
