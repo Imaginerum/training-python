@@ -30,39 +30,52 @@ def owce() :
     był = [' była juz tylko jedna', ' były już tylko {0}'.format(B-Z), ' było już tylko {0}'.format(B-Z), ' nie było już']
 
     def war2(slowo, ile):  # 2 opcje warunkowe
-        if ile == 1:
-            return(zja[0])
+        if len(slowo)<3 and ile == 1:
+            return(slowo[0])
         else :
-            return(zja[1])
+            return(slowo[1])
 
 
-    def war3(slowo, ile) : # 3 opcje warunkowe
+    def war(slowo, ile) : # 3 opcje warunkowe
         if (len(str(ile)) == 1):
+            # 3 opcje warunkowe!!!
             if ile == 1:
                 return (slowo[0])
             elif ((str(ile)[0] == str(2)) or (str(ile)[0] == str(3)) or (str(ile)[0] == str(4))):
                 return (slowo[1])
 
-            # 4 warunek !!!
+            # 4 opcje warunkowe!!!
             elif (str(ile) == str(0) and len(slowo)>3):
                 return slowo[3]
 
+            # 2 opcje warunkowe!!!
+            elif (str(ile) == str(1) and len(slowo) < 3):
+                return slowo[0]
+            elif (str(ile) != str(1) and len(slowo) < 3):
+                return slowo[1]
+
+            # 3 i 4 opcje warunkowe!!!
             else:
                 return slowo[2]
 
         else:
+            # 3 i 4 opcje warunkowe!!!
             if ((str(ile)[-2:] == str(12)) or (str(ile)[-2:] == str(13)) or (str(ile)[-2:] == str(14))):
                 return (slowo[2])
             elif ((str(ile)[-1] == str(2)) or (str(ile)[-1] == str(3)) or (str(ile)[-1] == str(4))):
                 return (slowo[1])
 
-            else:
+            # 2 opcje warunkowe!!!
+            elif (str(ile) != str(1) and len(slowo) < 3):
+                return slowo[1]
+
+            else: # 3 i 4 opcje warunkowe!!!
                 return (slowo[2])
 
     if (B >=1) & (W >=1) & (Z>=0) & (B>=Z) : #kontrola danych
-        print('Na łące' + war3(pasł, B) + 'się {0}'.format(B) + war3(owc, B) +
-        '. Wieczorem' + war3(przyszł, W) + str(W) + war3(wil, W) + 'i' + war2(zja, W) + str(Z) +
-        war3(owc, Z) + '. Rano na łace' + war3(był, B-Z) + war3(owc, B-Z))
+        print('Na łące' + war(pasł, B) + 'się {0}'.format(B) + war(owc, B) +
+        '. Wieczorem' + war(przyszł, W) + str(W) + war(wil, W) + 'i' + war2(zja, W) + str(Z) +
+        war(owc, Z) + '. Rano na łace' + war(był, B-Z) + war(owc, B-Z))
 
     else :
         print("Błędne dane.\nOwiec i wilków powinno być więcej, niż 1 i owiec powinno być więcej, niż wilków")
