@@ -22,10 +22,18 @@ print(tab4x4[1][3]) # sprawdzenie pozycjonowania
 
 # Numpy pozwala używać pythona wydajniej. Generowanie pętli zajmuje za dużo czasu - czesto x 100.
 
-nr =0
-for i in range(0,4) if i < 4 :
-    for k in range(1,17)  if k <4 :
-        nr += 1
+
+#A to nie działa... wierdo :) - chodzi o sposób zapisywania danych :
+nums = [1,2,3]
+for x in nums :
+    x = x * 10
+print(nums)
+
+# A to dziala i jest szybsze niż petle :)
+nums = np.array(nums)
+nums *= 10
+nums - nums.astype(int)
+print(nums)
 
 # Dodaj ćwiczenie 17b 17c i 17d - potrzebujesz numpy
 
