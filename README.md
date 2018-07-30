@@ -1,3 +1,4 @@
 # training
 
-I put here my code to have database of my training tasks and see what VCS can do.
+I put here my code to have database of my training tasks as a reminder and I want to understand how do I really can
+use Git (VCS).
