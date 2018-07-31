@@ -5,12 +5,9 @@ import math as m
 
 def main():
 
-    print('Podaj współczynniki równania ax^2 + bx + c = 0\nPodaj a=')
-    a = int(input())
-    print('Podaj b=')
-    b=int(input())
-    print('Podaj c=')
-    c=int(input())
+    a = int(input('Podaj współczynniki równania ax^2 + bx + c = 0\nPodaj a= '))
+    b=int(input('Podaj b= '))
+    c=int(input('Podaj c= '))
 
     if a != 0 : #sprawdzenie czy równanie jest kwadratowe
         delta = b**2 - 4 * a * c

@@ -3,12 +3,10 @@ import math as m
 def main():
 
     #variable values
-    print("Trójkat o bokach a=")
-    a = int(input())
-    print("i b=")
-    b = int(input())
-    print("oraz kącie gamma=")
-    gamma_stopnie = int(input())
+
+    a = int(input("Trójkat o bokach a= "))
+    b = int(input("i b= "))
+    gamma_stopnie = int(input("oraz kącie gamma= "))
 
     #calculations
     gamma_rad = gamma_stopnie * m.pi / 180

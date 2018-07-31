@@ -5,9 +5,8 @@ Napisz program wypisujący wszystkie dzielniki zadanej liczby naturalnej, liczb�
 powinien podawać komunikat, jeżeli podana liczba jest liczbą pierwszą.
 '''
 
-print("\nPodaj liczbę naturalną, której dzielniki chciałbyś poznać: ")
 
-liczba = int(input())
+liczba = int(input("\nPodaj liczbę naturalną, której dzielniki chciałbyś poznać: "))
 
 dzielniki = [i for i in range(1, liczba+1) if liczba % i == 0]
 suma = 0

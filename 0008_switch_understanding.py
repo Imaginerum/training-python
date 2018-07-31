@@ -2,8 +2,7 @@
 
 def main():
 
-    print('Podaj nr dnia tygodnia...')
-    nr_dnia = int(input())
+    nr_dnia = int(input('Podaj nr dnia tygodnia...'))
 
     #dane pod dict, key = dni, value = num:
     dni = ['Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota', 'Niedziela']

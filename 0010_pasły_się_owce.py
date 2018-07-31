@@ -10,12 +10,9 @@ kontrola danych: B >=1, W >=1, Z>=0, B>=Z
 
 def owce() :
 
-    print("Podaj liczbę owiec: ")
-    B = int(input())
-    print("Podaj liczbę wilków: ")
-    W = int(input())
-    print("Podaj liczbę zjedzonych owiec: ")
-    Z = int(input())
+    B = int(input("Podaj liczbę owiec: "))
+    W = int(input("Podaj liczbę wilków: "))
+    Z = int(input("Podaj liczbę zjedzonych owiec: "))
 
     # kombinacja slowa 2-warunkowe :
     zja = [' zjadł ', ' zjadły ']

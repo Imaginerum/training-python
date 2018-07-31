@@ -7,10 +7,8 @@ Wzór ogólny ciągu to: nk = n(k-2) + n(k-1), każdy kolejny wyraz jest sumą d
 
 '''
 
-print('Podal liczbe wyrazów ciagu Fibonacciego: ')
-
 #Ciag decymalny fibonacciego:
-fib10 = int(input())
+fib10 = int(input(print('Podal liczbe wyrazów ciagu Fibonacciego: ')))
 list10 = []
 
 for i in range(1, fib10 + 1) :
