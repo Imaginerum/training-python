@@ -278,13 +278,13 @@ def solution16(n, result='', i=0):
         result += SPQR[i][1]
         n -= SPQR[i][0]
     i += 1
-    return solution(n, result, i)
+    return solution16(n, result, i)
 
 roman = zip(('M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I'),
             (1000, 900, 500,  400, 100,   90,  50,   40,  10,    9,   5,    4,   1))
 
 def solution17(n):
-    return next(r + solution(n - x) for r, x in roman if x <= n) if n > 0 else ''
+    return next(r + solution17(n - x) for r, x in roman if x <= n) if n > 0 else ''
 
 SYMBOL = {
     1: "I",
