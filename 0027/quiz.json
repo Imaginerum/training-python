@@ -1,0 +1,27 @@
+[
+  {
+    "pytanie": "W którym roku pojawił się Python?",
+    "A": "1986",
+    "B": "1991",
+    "C": "1995",
+    "D": "2000",
+    "prawidłowa odpowiedź": "B"
+  }
+  {
+    "pytanie": "którą planetą od słońca jest Ziemia?",
+    "A": "1",
+    "B": "2",
+    "C": "3",
+    "D": "4",
+    "prawidłowa odpowiedź": "C",
+
+  }
+  {
+    "pytanie": "który aktor jako pierwszy wcielił się w rolę Jamesa Bonda",
+    "A": "Sean Connery",
+    "B": "Roger Moor",
+    "C": "Timothy Dalton",
+    "D": "Pierce Brosman",
+    "prawidłowa odpowiedź": "A"
+  }
+]
