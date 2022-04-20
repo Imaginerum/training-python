@@ -8,11 +8,11 @@ Wzór ogólny ciągu to: nk = n(k-2) + n(k-1), każdy kolejny wyraz jest sumą d
 '''
 
 #Ciag decymalny fibonacciego:
-fib10 = int(input(print('Podal liczbe wyrazów ciagu Fibonacciego: ')))
+fib10 = int(input(print('Podaj liczbe wyrazów ciagu Fibonacciego: ')))
 list10 = []
 
 for i in range(1, fib10 + 1) :
-    if len(list10) >=2 and fib10!=0:
+    if len(list10) >=2 and fib10 != 0:
         nk = list10[i - 3] + list10[i - 2]
         list10.append(nk)
     elif len(list10) == 0 and fib10 !=0:

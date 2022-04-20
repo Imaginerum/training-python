@@ -2,7 +2,7 @@
 
 print('\n\t\tMultiplication Table\n')
 
-for i in range(1,11) :
+for i in range(1, 11) :
     for k in range(1, 11):
         print(i * k, end='\t')
     print('\n')
@@ -12,7 +12,7 @@ for i in range(1,11) :
 
 import numpy as np
 
-tab4x4 = np.linspace(1,16,16) # od 1 do 16 stwórz array 16 punktów
+tab4x4 = np.linspace(1, 16, 16) # od 1 do 16 stwórz array 16 punktów
 
 tab4x4 = tab4x4.reshape([4,4]) # zmień kształt na 4x4
 tab4x4 = tab4x4.astype(int) #zmien typ na int

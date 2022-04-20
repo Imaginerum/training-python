@@ -8,7 +8,7 @@ def main():
 
     for kat_stopnie in range(0,91):
 
-        wynik = m.sin(kat_stopnie*m.pi/180)
+        wynik = m.sin(kat_stopnie * m.pi/180)
         print("sin {0} = {1}".format(kat_stopnie, round(wynik, 10)))
         dane["sin {0}".format(kat_stopnie)] = wynik
 
