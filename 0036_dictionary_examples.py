@@ -31,3 +31,6 @@ for key in grade_journal2:
 '''
 print()
 
+import pprint
+
+print(pprint.pformat(grade_journal2))
