@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keylogger</title>
+    
+    <script>
+        function keyup(element){
+            element.setAttribute("value",element.value)
+        }
+    </script>
+
+<link rel="stylesheet" href="/css/keylogger.css">
+
+</head>
+<body>
+<!-- text piszemy plaintextem -->
+    <p>Login:</p>
+    <input type="text" placeholder="wpisz login" value="" onkeyup=keyup(this)> <br>
+    <p>Haslo:</p>
+    <!-- password maskuje znaki -->
+    <input onkeyup=keyup(this) type="password" value="">
+    
+    
+</body>
+</html>

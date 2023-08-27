@@ -1,0 +1,13 @@
+.format_p {
+    color: blue;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div{
+    background-color: black;
+    border: solid 2px red;
+   }
+   
+span {
+    color: blue;
+}
