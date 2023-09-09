@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../js/navbar.js"></script>
+<link rel="stylesheet" href="../css/menu_style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">Imie</label>
+    <input type="text" placeholder="Imie" name="imie" value="">
+
+    <!-- backend -->
+    <!-- wez wartosc po imieniu
+    GET imie wyswwietl na stronie Witaj uzytkowniku -->
+
+    <!-- formmularz -->
+    <form action="contact.html" method="GET">
+
+        <h3>Formularz kontaktowy</h3>
+        <input type="text" placeholder="Imie" name="imie" value=""> <br><br>
+
+        <input type="password" placeholder="PESEL" name="pesel" required>
+
+        <br><br>
+
+        <input type="email" name="email" placeholder="email">
+        <input type="submit" name="wyślij" value="Wyślij">
+
+        <br><br>
+        <p>Jakie kody odpowiedzi od serwera dotyczą błędów po stronie klienta</p>
+
+        <label>
+            <input type="radio" name="kod" value="100">1XX
+        </label>
+        <label>
+            <input type="radio" name="kod" value="200">2XX
+        </label>
+        <label>
+            <input type="radio" name="kod" value="300">3XX
+        </label>
+        <label>
+            <input type="radio" name="kod" value="400">4XX
+        </label>
+        
+        <label>
+            <input type="radio" name="kod" value="500">5XX
+        </label>
+
+        <br><br>
+
+        <!-- wiielokrotny wybor -->
+
+        <p>Jakie kody odopowiedzi od serwera znasz?</p>
+
+        <label>
+            <input type="checkbox" name="kod_wielokrotnie_101" value="101">101
+        </label>
+        
+        <label>
+            <input type="checkbox" name="kod_wielokrotnie_404" value="404">404
+        </label>
+        
+        <label>
+            <input type="checkbox" name="kod_wielokrotnie_405" value="405">405
+        </label>
+
+        <br><br>
+
+        <!-- lista rozwijana -->
+
+        <p>Który modół HackerU najbardziej Ci sie podobał?</p>
+
+        <select name="kurs" >
+            <option value="default"> -- select option --</option>
+            <option value="red_sortng">red sorting</option>
+            <option value="linux">linux</option>
+            <option value="windows_server">windows server</option>
+            <option value="python">python</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- wwybranie daty spotkania -->
+        <input type="date" name="data spotkania">
+
+        <br><br>
+
+        <input type="color" name="color">
+
+        <br><br>
+
+        <input type="button" value="Kliknij po bonus" onclick="alert('Jesli wybierzesz modul python, to masz 20 do XP')">
+
+
+    </form>
+</body>
+</html>

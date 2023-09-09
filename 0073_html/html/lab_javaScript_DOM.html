@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab JS DOM</title>
+</head>
+<body>
+    
+    <div id="dom-lab"></div>
+
+    <script>
+        var element = document.querySelector("#dom-lab");
+        
+        var new_paragraph = document.createElement("p");
+
+        var text_node = document.createTextNode("to jest zawartosc paragrafu");
+        
+        var appending_text_to_paragraph = new_paragraph.appendChild(text_node);
+
+        var appending_paragraph_to_div = element.appendChild(new_paragraph);
+
+        var new_color_for_paragraph = new_paragraph.style.color = "blue";
+
+        var image = document.createElement("img");
+        image.src = "https://static.deon.pl/storage/image/core_files/2022/9/8/163ca32114a2410349282a7e305f0452/jpg/deon/articles-thumb-xlarge-breakpoint-default/polacy-beda-eksplorowac-kosmos-pierwszy-na-liscie-jest-ksiezyc.jpg";
+        image.setAttribute("onclick","alert(Kod 204)");
+        element.appendChild(image);
+        image.style.width = "50%";
+
+        var image_paragraph = document.createElement("p");
+
+        var image_paragraph_content = document.createTextNode("Lubiem miec kontent a tutaj nie ma.");
+
+        image_paragraph.appendChild(image_paragraph_content);
+
+        image_paragraph.style.color = "orange";
+
+        image.setAttribute("onmouseover","element.appendChild(image_paragraph)");
+
+    </script>
+
+
+</body>
+</html>

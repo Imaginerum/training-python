@@ -1,0 +1,1 @@
+document.write('<nav><ul><li class="menu"><a href="index.html">Strona główna</a></li><li class="menu"><a href="nauka.html">Nauka</a></li><li class="menu"><a href="kontakt.html">Kontakt</a></li><li class="menu"><a href="clickjacking.html">Clickjacking</a></li><li class="menu"><a href="keylogger.html">Keylogger</a></li></ul></nav>');

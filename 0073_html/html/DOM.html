@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="example">Try it</button>
+
+    <script>
+        // wyciagniecie wezla - sposob I
+        var button_node = document.querySelector("#example");
+
+        //wyciagniecie wezla - sposob II
+        var button_node_2 = document.getElementById("example");
+    </script>
+
+    <div id="inner"></div>
+    <script>
+        var my_element = document.getElementById("inner");
+        my_element.innerHTML = "<p>Nowy paragraf dodany do diva</p>"
+
+        // ustawienie atrybutu na elemencie
+
+        my_element.setAttribute("align","center");
+    </script>
+    <br><br>
+
+    <button id="btn">Pierwszy button</button>
+    <button id="btn_2">Drugi button</button>
+    
+    <script>
+        //bierzmey tekst zawarty miedzy tagami <<button>> oraz </button>
+        let text = document.getElementById("btn").innerText;
+        document.getElementById("btn_2").innerHTML = text;
+    </script>
+
+    <!-- EVENTY -->
+
+    <!-- 3 typy do łączenia skryptu
+        external <script src="zrodlo"></script>
+        internal:  w kodzie <<script> w kodzie <script>
+        inline : oparte o eventy w danym tagu HTMLowym -->
+
+    <h1 onclick="alert('naglowek zostal klikniety')">Kliknij mnie</h1>
+
+    <img src="bzdura" onerror="alert(document.URL)">
+
+    <div class="nowy-div"></div>
+
+    <script>
+        document.getElementByClassName('nowy-div')
+    </script>
+</body>
+</html>
