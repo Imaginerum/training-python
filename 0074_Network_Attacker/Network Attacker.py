@@ -1,3 +1,4 @@
+#dziaa tylko na linuxie
 import scapy.sendrecv
 from scapy.all import *
 import paramiko
@@ -89,6 +90,6 @@ Brute_Force(22)
 
 
 
-    print(Synchronization_Packet)
+
 
 scanport(23)
